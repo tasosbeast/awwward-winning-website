@@ -30,7 +30,7 @@ const About = () => {
         <h2 className="font-general text-sm uppercase md:text-[10px]">
           Welcome to zentry
         </h2>
-        <div className="mt-5 text-center text-4xl uppercase leading-[0.8] md:text-8xl">
+        <div className="mt-5 text-center text-4xl uppercase leading-[0.8] md:text-[6rem]">
           Disc<b>o</b>ver The World&apos;s <br /> largest shared <b>a</b>
           dventure
         </div>
