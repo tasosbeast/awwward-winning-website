@@ -14,7 +14,9 @@ const Hero = () => {
   const [loadedVideos, setLoadedVideos] = useState(0);
 
   const totalVideos = 4;
-  const nextVideoRef = useRef(null);
+  // Use separate refs for preview and main videos:
+  const previewVideoRef = useRef(null);
+  const mainVideoRef = useRef(null);
 
   const handleVideoLoad = () => {
     setLoadedVideos((prev) => prev + 1);
