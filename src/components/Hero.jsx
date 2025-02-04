@@ -117,11 +117,11 @@ const Hero = () => {
                 className="size-64 origin-center scale-150 object-cover object-center"
                 onLoadedData={handleVideoLoad}
               />
-            </div>
+            </button>
           </div>
 
           <video
-            ref={nextVideoRef}
+            ref={mainVideoRef}
             src={getVideoSrc(currentIndex)}
             loop
             muted
@@ -173,4 +173,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default memo(Hero);
