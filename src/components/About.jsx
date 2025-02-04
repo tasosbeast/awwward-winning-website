@@ -1,3 +1,9 @@
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
 const About = () => {
   return (
     <div id="about" className="min-h-screen min-w-screen">
