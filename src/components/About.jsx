@@ -40,6 +40,16 @@ const About = () => {
           <p>Zentry unites every player from countless games and platforms</p>
         </div>
       </div>
+
+      <div id="clip" className="h-dvh w-screen">
+        <div className="mask-clip-path about-image">
+          <img
+            src="img/about.webp"
+            alt="background"
+            className="absolute left-0 top-0 size-full object-cover"
+          />
+        </div>
+      </div>
     </div>
   );
 };
