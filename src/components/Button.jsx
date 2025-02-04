@@ -16,4 +16,12 @@ const Button = ({ title, id, rightIcon, leftIcon, containerClass }) => {
   );
 };
 
+Button.propTypes = {
+  title: PropTypes.string.isRequired,
+  id: PropTypes.string,
+  rightIcon: PropTypes.element,
+  leftIcon: PropTypes.element,
+  containerClass: PropTypes.string,
+};
+
 export default Button;
