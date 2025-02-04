@@ -39,7 +39,6 @@ const Hero = () => {
     () => {
       if (hasClicked) {
         gsap.set("#next-video", { visibility: "visible" });
-
         gsap.to("#next-video", {
           transformOrigin: "center center",
           scale: 1,
@@ -47,7 +46,14 @@ const Hero = () => {
           height: "100%",
           duration: 1,
           ease: "power1.inOut",
-          onStart: () => nextVideoRef.current.play(),
+          onStart: () => {
+            // Use main video ref for the animation
+            try {
+              mainVideoRef.current.play();
+            } catch (err) {
+              console.error("Error playing main video", err);
+            }
+          },
         });
 
         gsap.from("#current-video", {
